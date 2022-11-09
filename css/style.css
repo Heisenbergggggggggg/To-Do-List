@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Quicksand', sans-serif; */
+    /* font-family: 'Dancing Script', cursive; */
+    font-family: 'Bangers', cursive;
+    font-weight: 700px;
+    
+}
+
+body {
+    background: #780206;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #061161, #780206);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #061161, #780206); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.container {
+    border: 1px solid black;
+    width: 60vw;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 25px 0;
+}
+
+
+
+.header h1 {
+    font-size: 2rem;
+    color: rgb(253, 253, 18);
+    
+
+}
+
+
+.user-input {
+    width: 350px;
+    text-align: center;
+}
+
+.user-input input {
+   width: 80%;
+   outline: none;
+   padding: 8px;
+   border: 1px solid lightgray;
+    border-radius: 4px;
+}
+
+.user-input input:focus{
+    box-shadow: 0 0 5px rgb(242, 240, 240);
+}
+
+.user-input button {
+    cursor: pointer;
+    padding: 8px;
+    width: fit-content;
+    transition: 1s;
+    outline: none;
+    background-color: rgb(249, 249, 249);
+    border: 1px solid lightgray;
+    border-radius: 3px;
+}
+
+.user-input button:hover {
+    background-color: transparent;
+    color: white;
+}
+
+
+#toDoItems {
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/* .input-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    padding: 10px;
+    color: black;
+    margin-top: 5px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background-color: rgb(255, 255, 255);
+} */
+
+.input-item {
+margin:10px;
+height: 30px;
+width: fit-content;
+background-color: white;
+}
+
+.input-item:hover {
+    box-shadow: 0 0 20px rgb(216, 172, 179);
+    border: 1px solid pink;
+}
+
+.input-item div {
+    background-color: yellow;
+}
+.check-box {
+    background-color: blue;
+    cursor: pointer;
+    margin: 10px 10px;
+
+    
+}
+
+.edit-btn{
+
+    background-color: rgb(154, 150, 150);
+}
+.saveBtn {
+    background-color: blue;
+    width: 45px;
+    height: 30px;
+    margin: 10px;
+    color: white;
+}
+
+.remove-btn {
+    background-color: rgb(159, 58, 38);
+    margin: 10px;
+}
+
+.material-symbols-outlined {
+    width: 30px;
+    color: white;
+    margin: 5px;
+}
+
+@media (min-width:1100px) {
+    .input-item {
+        margin:10px;
+        height: 30px;
+        width: 350px;
+        background-color: white;
+        }
+}
+
+@media (min-width:700px) {
+    .input-item {
+        margin:10px;
+        height: 30px;
+        width: 250px;
+        background-color: white;
+        }
+}
+
+@media (max-width:1100px) {
+    body {
+        background-color: blue;
+    }
+    .header {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .header h1 {
+        margin: 10px 0;
+    }
+
+    .user-input {
+        width: 100%;
+    }
+
+    .to-do-items {
+        width: 100%;
+    }
+}
+
+
+@media (max-width:768px) {
+    .user-input {
+        width: 75%;
+    }
+
+
+
+}
+
+
+
+@media (max-width:320px) {
+
+    .container {
+        border: 1px solid black;
+        width: 70vw;
+        margin: auto;
+    }
+
+    .user-input {
+        width: 50%;
+    }
+
+    .input-item {
+        display: flex;
+        flex-direction: column;
+        margin:10px;
+        height: 30px;
+        min-width: 90px;
+        background-color: white;
+        }
+        
+
+   
+
+}
+
